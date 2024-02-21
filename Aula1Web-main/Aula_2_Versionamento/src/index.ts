@@ -56,7 +56,7 @@ let usuario: Usuario = {
     contato: contato
 }
 
-console.log ()
+console.log (Object.values(usuario));
 
 /*
 
