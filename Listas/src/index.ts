@@ -91,7 +91,7 @@ console.log("\n7)")
 console.log(Aumento(100, 0.50))
 
 //Exercicio 8
-function OrdemReversa(string: string) : string{
+function OrdemReversa(string: string){
     let array: string[] = string.split("")
     let reverse: string = array.reverse().join("")
 
@@ -102,7 +102,7 @@ console.log("\n8)")
 console.log(OrdemReversa("Isabelly"))
 
 //Exercicio 9
-function SomaPar(int: number[]) : number{
+function SomaPar(int: number[]){
     let soma: number = 0
     let i: number
     for(i=0; i<int.length; i++){
@@ -115,3 +115,15 @@ function SomaPar(int: number[]) : number{
 
 console.log("\n9)")
 console.log(SomaPar([1,2,3,4,5,6]))
+
+//Exercicio 10
+function Fatorial(n:number): number{
+    if(n == 0){
+    return 1
+}
+    else return n * Fatorial(n-1)
+    }
+
+    console.log("\n10)")
+    console.log(Fatorial(9))
+
